@@ -29,34 +29,35 @@
                                  &lt RSE TAB &mt LSFT SPC &lt LWR ENTER &lt LWR ESC &mt RSFT BSPC &lt RSE DEL
                         >;
                 };
+
                 lower_layer {
-                       bindings = <
-          &none &none &none &none &none &none    &none &none &none &none &none &none
-    &kp L &none &none &none &none &none &none    &none &none &none &none &none &none &none
-          &none &none &none &none &none &none    &none &none &none &none &none &none
-          &none &none &none &none &none &none    &none &none &none &none &none &none
-                          &lt ADJ &none &none    &none &none &lt ADJ
-                       >;
-               };
+                        bindings = <
+           &kp ESC  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5    &kp N6 &kp N7  &kp N8   &kp N9  &kp N0   &kp MINUS
+  &kp L &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T     &kp Y  &kp U   &kp I    &kp O   &kp P    &kp LBKT      &mt RWIN RBKT
+           &kp LSFT &kp A  &kp S  &kp D  &kp F  &kp G     &kp H  &kp J   &kp K    &kp L   &kp SCLN &mt RSFT SQT
+           &kp LCTL &kp Z  &kp X  &kp C  &kp V  &kp B     &kp N  &kp M   &kp CMMA &kp DOT &kp FSLH &mt RCTL BSLH
+                                 &lt ADJ &none &none    &none &none &lt ADJ
+                        >;
+                };
 
-               raise_layer {
-                       bindings = <
-          &none &none &none &none &none &none    &none &none &none &none &none &none
-    &kp R &none &none &none &none &none &none    &none &none &none &none &none &none &none
-          &none &none &none &none &none &none    &none &none &none &none &none &none
-          &none &none &none &none &none &none    &none &none &none &none &none &none
-                          &none &none &lt ADJ    &lt ADJ &none &none
-                       >;
-               };
+                raise_layer {
+                        bindings = <
+           &kp ESC  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5    &kp N6 &kp N7  &kp N8   &kp N9  &kp N0   &kp MINUS
+  &kp R &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T     &kp Y  &kp U   &kp I    &kp O   &kp P    &kp LBKT      &mt RWIN RBKT
+           &kp LSFT &kp A  &kp S  &kp D  &kp F  &kp G     &kp H  &kp J   &kp K    &kp L   &kp SCLN &mt RSFT SQT
+           &kp LCTL &kp Z  &kp X  &kp C  &kp V  &kp B     &kp N  &kp M   &kp CMMA &kp DOT &kp FSLH &mt RCTL BSLH
+                                 &none &none &lt ADJ    &lt ADJ &none &none
+                        >;
+                };
 
-               adjust_layer {
-                       bindings = <
-          &none &none &none &none &none &none    &none &none &none &none &none &none
-    &kp A &none &none &none &none &none &none    &none &none &none &none &none &none &none
-          &none &none &none &none &none &none    &none &none &none &none &none &none
-          &none &none &none &none &none &none    &none &none &none &none &none &none
-                            &none &none &none    &none &none &none
-                       >;
-               };
+                adjust_layer {
+                        bindings = <
+           &kp ESC  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5    &kp N6 &kp N7  &kp N8   &kp N9  &kp N0   &kp MINUS
+  &kp A &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T     &kp Y  &kp U   &kp I    &kp O   &kp P    &kp LBKT      &mt RWIN RBKT
+           &kp LSFT &kp A  &kp S  &kp D  &kp F  &kp G     &kp H  &kp J   &kp K    &kp L   &kp SCLN &mt RSFT SQT
+           &kp LCTL &kp Z  &kp X  &kp C  &kp V  &kp B     &kp N  &kp M   &kp CMMA &kp DOT &kp FSLH &mt RCTL BSLH
+                                 &lt RSE TAB &mt LSFT SPC &lt LWR ENTER &lt LWR ESC &mt RSFT BSPC &lt RSE DEL
+                        >;
+                };
         };
 };
