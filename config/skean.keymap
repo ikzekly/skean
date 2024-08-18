@@ -22,15 +22,15 @@
 
                 default_layer {
 // -------------------------------------------------------------------------------------------------
-// |  ESC |  [   |  Q  |  W  |   E  |  R  |  T  |           |  Y  |  U   |  I  |  O  |  P  |  ]   | BKSP |
-//        | TAB  |  A  |  S  |   D  |  F  |  G  |           |  H  |  J   |  K  |  L  |  ;  |  '   |
-//        | LALT |  Z  |  X  |   C  |  V  |  B  |           |  N  |  M   |  ,  |  .  |  /  |  \   |
-//                           | CTRL | RSE | LWR |           | LWR | RSE  | CMD |
+// | ESC |  [   |  Q  |  W  |   E  |  R  |  T  |     |  Y  |  U   |  I  |  O  |  P  |  ]   | BKSP |
+//       | TAB  |  A  |  S  |   D  |  F  |  G  |     |  H  |  J   |  K  |  L  |  ;  |  '   |
+//       | LALT |  Z  |  X  |   C  |  V  |  B  |     |  N  |  M   |  ,  |  .  |  /  |  \   |
+//                          | CTRL | RSE | LWR |     | LWR | RSE  | CMD |
                         bindings = <
-   &kp ESC &kp LBKT &kp Q &kp W &kp E &kp R &kp T            &kp Y &kp U  &kp I     &kp O   &kp P    &kp RBKT &kp BSPC
-           &kp TAB  &kp A &kp S &kp D &kp F &kp G            &kp H &kp J  &kp K     &kp L   &kp SEMI &mt SQT
-           &kp LALT &kp Z &kp X &kp C &kp V &kp B            &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt BSLH
-                    &kp LCTRL &lt RSE LSHFT &lt LWR SPACE    &lt LWR ESC &lt RSE RSHFT &kp RCMD
+  &kp ESC &kp LBKT &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U  &kp I     &kp O   &kp P    &kp RBKT &kp BSPC
+          &kp TAB  &kp A &kp S &kp D &kp F &kp G     &kp H &kp J  &kp K     &kp L   &kp SEMI &mt SQT
+          &kp LALT &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt BSLH
+           &kp LCTRL &lt RSE LSHFT &lt LWR SPACE     &lt LWR ESC &lt RSE RSHFT &kp RCMD
                         >;
                 };
                 lower_layer {
@@ -67,7 +67,7 @@
 //       |      |     |     |     |     |     |   |     |     |     |     |     |      |
 //                          |     |     |     |   |     |     |     |
                         bindings = <
-   &reset &bootloader  &none        &none        &none        &none        &none              &none        &none        &none        &none        &none         &bootloader &reset
+   &sys_reset &bootloader  &none        &none        &none        &none        &none              &none        &none        &none        &none        &none         &bootloader &sys_reset
           &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0  &bt BT_CLR
           &none        &none        &none        &none        &none        &none              &none        &none        &none        &none        &none         &none
                                                                     &trans &none &trans   &trans &none &trans
